@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMIGO | Modern Sportswear</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#home">AMIGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Our Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>ELEVATE YOUR <span class="accent-text">GAME</span></h1>
+            <p>
+              Premium sportswear for the modern athlete who dares to stand out
+            </p>
+            <a href="#products" class="btn btn-outline-light btn-lg"
+              >Explore Collection</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          Our Collection
+        </h2>
+        <div class="row g-4">
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <span class="product-badge">New</span>
+                <img
+                  src="image/1.jpg"
+                  class="product-img"
+                  alt="Performance Series"
+                />
+              </div>
+              <div class="product-info">
+                <h5>Performance Series</h5>
+                <p>Elite training collection for maximum performance</p>
+                <a href="#" class="view-details-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <span class="product-badge">Best Seller</span>
+                <img
+                  src="image/2.jpg"
+                  class="product-img"
+                  alt="Runner's Edge"
+                />
+              </div>
+              <div class="product-info">
+                <h5>Runner's Edge</h5>
+                <p>Advanced running gear for serious athletes</p>
+                <a href="#" class="view-details-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <img src="image/3.jpg" class="product-img" />
+              </div>
+              <div class="product-info">
+                <h5>Street Style</h5>
+                <p>Urban athletic wear for everyday comfort</p>
+                <a href="#" class="view-details-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="product-card">
+              <div class="product-img-wrapper">
+                <span class="product-badge">Limited</span>
+                <img src="image/1.jpg" class="product-img" alt="Pro Series" />
+              </div>
+              <div class="product-info">
+                <h5>Pro Series</h5>
+                <p>Professional grade sportswear collection</p>
+                <a href="#" class="view-details-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p>For more collections, check our Instagram page</p>
+              <button class="instagram-btn btn text-white mt-3">
+                <i class="fab fa-instagram me-2"></i>
+                VIEW OUR COLLECTION
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram CTA Section -->
+    <section
+      class="py-5 text-center"
+      style="background: var(--gray)"
+      data-aos="fade-up"
+    >
+      <div class="container">
+        <p class="instagram-cta-text">
+          To place an order or for any inquiries, feel free to reach out
+        </p>
+        <button class="instagram-btn btn text-white">
+          <i class="fab fa-instagram me-2"></i>
+          CONTACT US ON INSTAGRAM
+        </button>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title text-center">Our Location</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="location-map" id="map"></div>
+            <div class="location-info">
+              <h3>El-Qanater El-Khayreya, Qalyubia, Egypt</h3>
+              <p>
+                Visit our flagship store in the heart of El-Qanater El-Khayreya
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>All rights reserved © AMIGO 2025</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
